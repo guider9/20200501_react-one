@@ -1,15 +1,19 @@
-import React, {Component}from 'react';
+import React, { Component } from 'react';
+import { Button, message } from 'antd'
+import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom'
+import Login from './pages/login/login.jsx'
+import Admin from './pages/admin/admin.jsx'
+class App extends Component {
 
-// function App() {
-//   return (
-//     <div className="App">
-//   </div>
-//   );
-// }
-class App extends Component{
-  render(){
-    return(
-      <div>app</div>
+  render() {
+    return (
+
+      <BrowserRouter>
+        <Switch>
+          <Route path='/login' component={Login} />
+          <Route path='/' component={Admin} />
+        </Switch>
+      </BrowserRouter>
     )
   }
 }
