@@ -77,4 +77,12 @@
     1). 区别开发环境运行和生产环境打包运行
     2). 路由的理解
 
+## 9. async await 理解
+    1). 简化promise对象的使用：不再使用.then()来指定回调函数
+    2). 以同步编码方式实现异步流程
+    3). 使用await后得到的不再是promise 而是异步成功的值
+
+### 10. render路由跳转用react-router-dom redirect
+    this.props.history.replace('/')用在事件回调函数中路由跳转
+    
 
